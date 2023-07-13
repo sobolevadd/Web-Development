@@ -1,0 +1,19 @@
+h1, h2 {
+    color: rgb(90, 58, 90);
+}
+
+.box > p {
+    color: rgb(143, 64, 64);
+}
+
+.box li {
+    color: rgb(89, 99, 128);
+}
+
+li.done {
+    color:rgb(122, 109, 101)
+}
+
+ul p.done {
+    font-size: 0.8rem;
+}
