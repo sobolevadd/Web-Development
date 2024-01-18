@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="cz">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lemon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lemon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Tea Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+      background-color: #F8F4EC;
+    }
+
+    #home {
+      height: 100vh;
+      background: url('./images/tea-image.webp') center/cover no-repeat;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      color: black;
+    }
+
+    #home h1 {
+        opacity: 0.6;
+        margin-top: 50px;
+        margin-left: 15px;
+        font-size: 70px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    #benefits,
+    #steps,
+    #sorts,
+    #contact {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .section {
+      position: relative;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+    }
+
+    .step-line {
+      position: absolute;
+      margin-top: 37px;
+      border-left: 2px dashed #333; 
+      height: calc(100% - 300px); 
+      left: 20px; 
+      z-index: -1;
+    }
+
+    .step {
+      position: relative;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .step-number {
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .step-text {
+      width: 100%;
+      padding: 20px;
+    }
+
+    #sorts h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        font-style: normal;
+        position: relative; 
+        left: 55px;
+    }
+
+    .tea-sort {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .tea-sort img {
+      max-width: 240px;
+      height: auto;
+      margin-right: 20px;
+    }
+
+    .tea-description {
+      flex: 1;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .tea-name {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        font-style: normal;
+        margin-bottom: 5px;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    #benefits h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        font-style: normal;
+    }
+
+    #benefits h5 {
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 25px;
+    }
+
+    #benefits li {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Čaj.cz</a>
+    <a href="#benefits">Výhody</a>
+    <a href="#steps">Process výroby</a>
+    <a href="#sorts">Druhý čaje</a>
+    <a href="#contact">Kontakty</a>
+  </nav>
+
+  <div id="home">
+    <h1>ČAJ VÁM ZLEPŠÍ ŽIVOT</h1>
+  </div>
+
+  <div id="benefits" class="section">
+    <h2>Výhody pití čaje</h2>
+    <h5>Nejen, že čaj hydratuje a chutná dobře, což ho dělá dobrou alternativou vody, 
+        ale dostupné živiny a minerály mohou přispět k vašemu celkovému zdraví.
+        
+        I když pití čaje samo o sobě není řešením ani lékem na žádný zdravotní stav, 
+        lze jej snadno začlenit do zdravé výživy. Zde je několik důležitých zdravotních výhod čaje.</h5>
+    <ol>
+        <li><b>Snižuje cholesterol.</b> Černý čaj obsahuje theaflaviny a thearubiginy (antioxidanty), které mají zdravotní přínosy pro vaše tělo. 
+            Jedna studie zjistila, že pomáhají zmírňovat hypercholesterolemii (vysoký cholesterol), když je konzumujete ve vaší stravě.</li>
+        <li><b>Snižuje riziko hyperglykémie.</b>
+            Stejná studie ukázala, že theaflaviny a thearubiginy z černého čaje také přispívají k nižšímu riziku hyperglykémie nebo vysoké hladiny cukru v krvi.</li>
+        <li><b>Snižuje riziko rakoviny.</b> Zelené a černé čaje obsahují také důležité polyfenoly, což jsou mikroživiny, 
+            které se nacházejí v potravinách rostlinného původu. Polyfenoly nalezené v těchto typech čaje jsou spojovány se zdravou regulací růstu a přežití rakovinných buněk, 
+            což vede k nižšímu riziku vzniku rakoviny.</li>
+        <li><b>Zlepšuje kvalitu spánku a snižuje riziko deprese.</b> Některé čaje, včetně heřmánku, se konzumují, aby lidem pomohly relaxovat na konci dne, 
+            aby mohli lépe spát a odpočívat. A bylo zjištěno, že heřmánkový čaj pomáhá ženám po porodu lépe spát a zmírňuje jejich deprese.</li>
+        <li><b>Zvyšuje soustředněnost a bdělost.</b> Je třeba provést další výzkum, abychom přesně porozuměli účinkům kofeinu na kognitivní funkce. Některé studie však ukázaly, že konzumace kofeinu obsaženého v některých čajích, v nízkých dávkách a pravidelně, může přispět k lepšímu soustředění a bdělosti.</li>
+    </ol>
+
+    
+  </div>
+
+  <div id="steps" class="section">
+    <h2>Proces výroby čaje</h2>
+    <div class="step-line"></div>
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-text">Trhání - Zkušení sběrači čaje trhají pouze čerstvý list skládající se z pupenu a listů pod ním, což je klíčem k zajištění čaje bohatého na chuť a charakter.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-text">Chřadnutí - natrhané čajové lístky se přivezou do továrny, kde se vloží do velkých chřadnoucích žlabů, které rozdmýchávají horký vzduch, aby se snížil obsah vlhkosti v čajovém lístku. To zajistí, že list ochabne. To se nazývá „fyzické chřadnutí“. Během této doby probíhají také důležité chemické změny, jako je rozpad molekul na menší jednotky, které zvyšují aminokyseliny a aromatické sloučeniny, částečné rozpady stěn mezi buňkami (propustnost buněčných stěn), což je důležité pro následující fáze výroby. Aby se zajistilo, že toto „chemické chřadnutí“ proběhne adekvátně, otrhané listy uschnou minimálně 6 hodin.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-text">Válcování - účelem rolování je především rozbití listových buněk nebo oddílů a smíchání chemických složek listů s enzymy. K dosažení tohoto cíle se používají různé typy válečků. První válec je často velmi jemný a známý jako ‚předběžná úprava‘. Bylo zjištěno, že hlavním účinkem válce pro předběžné úpravy je jemné vytlačení šťávy z listů na povrch zkroucených částic. Tyto šťávy vysychají na povrchu částic a přispívají k černosti čaje. Následné válcování je naprogramováno tak, aby bylo dosaženo důkladného rozpadu buněk listu. Značné množství tepla vzniká třením během procesu válcování, ale je třeba dbát na to, aby teplota nepřesáhla 35ºC, protože při vyšších teplotách by mohlo docházet k nežádoucím chemickým a enzymovým reakcím.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-text">Fermentace / oxidace - jakmile list projde válcováním, je rozprostřen na rovný povrch a ponechán, aby došlo k oxidaci nebo tomu, čemu se říká také fermentace. Proces oxidace představuje řadu složitých chemických reakcí, které začínají v okamžiku, kdy se list rozbije ve válečku. Rozbití buněk, které způsobí smíchání enzymů s jinými chemickými sloučeninami v buňce, má za následek řadu reakcí; nejdůležitější je oxidace polyfenolů. Další reakcí, ke které dochází během fermentace, je tvorba některých aromatických sloučenin.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">5</div>
+      <div class="step-text">Sušení - proces sušení odstraní většinu vlhkosti listů a zastaví fermentaci zničením enzymů. Kromě toho je chuť čaje během vypalování „vyvážená“, protože jsou odstraněny některé méně žádoucí nízkovroucí sloučeniny, čímž se zvýrazňuje přítomnost užitečnějších sloučenin s vyšší teplotou varu.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">6</div>
+      <div class="step-text">Třídění - sušené čajové lístky se třídí na částice tak, že je posílají přes síta, která mají různé velikosti. To pomáhá kategorizovat čaje do různých tříd – Dust, Pekoe, BOP, atd.</div>
+    </div>
+    <div class="step">
+      <div class="step-number">7</div>
+      <div class="step-text">Degustace a hodnocení - připravený čaj je následně ochutnán a posouzen teamakerem a odbornými degustátory, aby bylo zajištěno, že splňuje všechny standardy kvality, pokud jde o vzhled listů, aroma, barvu šálku a charakter čaje.</div>
+    </div>
+  </div>
+
+  <div id="sorts" class="section">
+    <h2 >Druhy čaje</h2>
+    <div class="tea-sort">
+      <img src="images/wt.jpeg" alt="Bílý čaj">
+      <div class="tea-description">
+        <div class="tea-name">Bílý čaj</div>
+        <p>Bílé čaje jsou svěží, sladké a jemné chuti s čistým aroma. Zpracováním jde o nejpřirozenější formu čaje. Sklizené lístky se pouze nechávají zvadnout na slunci, poté se suší a nakonec třídí. Během zavadání může dojít k velmi lehké přirozené oxidaci.</p>
+      </div>
+    </div>
+    <div class="tea-sort">
+      <img src="images/gt.jpeg" alt="Zelený čaj" >
+      <div class="tea-description">
+        <div class="tea-name">Zelený čaj</div>
+        <p>Zelený čaj jsou svěží, lehké a povzbuzující – čerstvost je základní kvalitativní vlastností zeleného čaje. Poznáme ji podle čerstvé vůně a svěží zelené barvy listu. Vyrábí se v průběhu celého roku, ty nejlepší ale pochází z jarních sklizní.</p>
+      </div>
+    </div>
+    <div class="tea-sort">
+      <img src="images/oolong.jpeg" alt="Modrozelený čaj(oolong)">
+      <div class="tea-description">
+        <div class="tea-name">Modrozelený čaj(oolong)</div>
+        <p>Široká škála částečně oxidovaných čajů, jedná se o početnou skupinu aromatických a často velmi specifických čajů od jemných, zelinkavých lehce oxidovaných moderních oolongů, až po více oxidované, silněji pečené čaje tradiční (zvané útesové).</p>
+      </div>
+    </div>
+    <div class="tea-sort">
+      <img src="images/cc.jpeg" alt="Červený čaj">
+      <div class="tea-description">
+        <div class="tea-name">Červený čaj</div>
+        <p>Červený čaj, na Západě známý jako čaj černý, tedy plně oxidovaný. Výrazné vůně, plné chuti, osvěžující a povzbuzující. Svůj název získal od barvy svého nálevu oscilujícím mezi tóny červené, oranžové a hnědé.</p>
+      </div>
+    </div>
+    <div class="tea-sort">
+      <img src="images/blacktea.jpeg" alt="Tmavý čaj">
+      <div class="tea-description">
+        <div class="tea-name">Tmavý čaj / černý čaj</div>
+        <p>Tmavé čaje jsou známé pro svou zemitou a dřevitou chuť s bohatou a hladkou chutí. Čína nemá černé čaje jak je známe, ale černé čaje jsou označovány jako tmavé.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id= "contact" class="container">
+    <footer >
+      <div class="border-bottom"></div>
+      <div class="nav justify-content-center mb-3 pb-3">
+        <li class="nav-item"><a class="nav-link px-2 text-body-secondary">Contact information:</a></li>
+        <li class="nav-item"><a class="nav-link px-2 text-body-secondary">soboldar@fjfi.cvut.cz</a></li>
+        <li class="nav-item"><a class="nav-link px-2 text-body-secondary">micham20@fjfi.cvut.cz</a></li>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
